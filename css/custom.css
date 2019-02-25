@@ -1,0 +1,11 @@
+.tickets-button {
+    background-color: #820233;
+    position: relative;
+    top: -14px;
+}
+
+.simple-bar .menu li.tickets-button a {
+    color: white;
+    font-size: 12px;
+    padding: 14px;
+}
