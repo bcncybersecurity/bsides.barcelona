@@ -9,3 +9,60 @@
     font-size: 12px;
     padding: 14px;
 }
+.speakers .row {
+    margin-bottom: 16px;
+}
+.speakers .talk-info {
+    min-height: 160px;
+}
+
+.speakers .talk-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.speakers .speaker-name {
+    font-size: 14px;
+}
+
+.speakers .speaker-name a {
+    text-decoration: underline;
+    color: #820233;
+}
+
+.speakers .btn {
+    bottom: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.speakers .coming-soon {
+    padding: 36px 0;
+}
+
+.speakers .coming-soon p {
+    font-size: 36px;
+}
+
+.modal-title {
+    font-size: 28px;
+    color: #333;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.modal-body,
+.modal-footer {
+    font-size: 14px;
+}
+
+.modal-footer {
+    text-align: left;
+}
+
+.modal-footer .speaker-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
