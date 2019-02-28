@@ -66,3 +66,16 @@
     font-weight: bold;
 }
 
+/* Sponsors */
+
+.sponsors-title {
+    margin-bottom: 16px;
+}
+
+.client-row img {
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+}
+
+
