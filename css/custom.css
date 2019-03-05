@@ -72,6 +72,18 @@
     margin-bottom: 16px;
 }
 
+.client-row {
+    margin-bottom: 32px;
+}
+
+.client-row:last-child {
+    margin-bottom: 0;
+}
+
+.client-row .center-vertical {
+    min-height: 155px;
+}
+
 .client-row img {
     max-height: none;
     max-width: none;
