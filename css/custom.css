@@ -84,6 +84,10 @@
     min-height: 155px;
 }
 
+.client-row .center-vertical .cimpress {
+    margin-top: 48px;
+}
+
 .client-row img {
     max-height: none;
     max-width: none;
