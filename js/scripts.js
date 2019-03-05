@@ -523,6 +523,18 @@ $(window).load(function(){
 	});
 
     var talks = {
+        'keynote': {
+            title: 'Keynote',
+            descriptionParagraphs: [
+                'TBC'
+            ],
+            speakers: [{
+                name: 'Iftach Ian Amit',
+                bioParagraphs: [
+                    'Iftach (Ian) Amit, has over 20 years of experience in hands-on and strategic roles, working across diverse security fields: business, industry, marketing, technical and research. Ian is the Chief Security Officer at Cimpress, the world leader in mass customization. Previously, Ian held senior leadership roles at Amazon, ZeroFOX and IOActive. His career also includes time at Security-Art, Aladdin, Finjan, and Datavantage, as well as speaking at conferences such as BlackHat, DefCon, various BSides, and RSA. He founded the Tel-Aviv DefCon chapter (DC9723) and also was a founding member of the Penetration Testing Execution Standard (PTES). Ian studied Computer Science and Business Administration at the Herzliya Interdisciplinary Center and lives in Manhattan.'
+                ]
+            }]
+        },
         'scaling-threat-models': {
             title: 'Scaling threat models... by playing cards!? A case study',
             descriptionParagraphs: [
