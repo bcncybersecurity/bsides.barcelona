@@ -84,7 +84,8 @@
     min-height: 155px;
 }
 
-.client-row .center-vertical .cimpress {
+.client-row .center-vertical .cimpress,
+.client-row .center-vertical .blueliv {
     margin-top: 48px;
 }
 
