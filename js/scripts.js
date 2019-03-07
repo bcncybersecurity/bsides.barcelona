@@ -526,12 +526,29 @@ $(window).load(function(){
         'keynote': {
             title: 'Keynote',
             descriptionParagraphs: [
-                'TBC'
+                ''
             ],
             speakers: [{
                 name: 'Iftach Ian Amit',
                 bioParagraphs: [
                     'Iftach (Ian) Amit, has over 20 years of experience in hands-on and strategic roles, working across diverse security fields: business, industry, marketing, technical and research. Ian is the Chief Security Officer at Cimpress, the world leader in mass customization. Previously, Ian held senior leadership roles at Amazon, ZeroFOX and IOActive. His career also includes time at Security-Art, Aladdin, Finjan, and Datavantage, as well as speaking at conferences such as BlackHat, DefCon, various BSides, and RSA. He founded the Tel-Aviv DefCon chapter (DC9723) and also was a founding member of the Penetration Testing Execution Standard (PTES). Ian studied Computer Science and Business Administration at the Herzliya Interdisciplinary Center and lives in Manhattan.'
+                ]
+            }]
+        },
+        'pentesting-chatops': {
+            title: 'Pentesting ChatOps',
+            descriptionParagraphs: [
+                'ChatOps, a concept originating from Github, is chatroom-driven DevOps for  distributed teams, using chatbots (like Hubot) to execute custom scripts and plugins.',
+                'We have applied the concept of ChatOps to the penetration testing workflow, and found that it fits outstandingly – for everything from routine scanning to spearphishing to pentest gamification.',
+                'This talk discusses the tools that we use (RocketChat, Hubot, Gitlab, pentesting tools), and provides battle stories of using Pentesting ChatOps in practice.'
+            ],
+            speakers: [{
+                name: 'Dr. Melanie Rieback',
+                bioParagraphs: [
+                    'Dr. Melanie Rieback is the CEO/Co-founder of Radically Open Security, the world’s first non-profit computer security consultancy company. She is also a former Assistant Professor of Computer Science at VU who performed RFID security research (RFID Virus and RFID Guardian), that attracted worldwide press coverage, and won several awards (VU Mediakomeet, ISOC Award, NWO I/O award, IEEE Percom Best Paper, USENIX Lisa Best Paper).',
+                    'Melanie worked as a Senior Engineering Manager on XenClient at Citrix, where she led their Vancouver office. She was also the head researcher in the CSIRT at ING Bank, where she spearheaded their Analysis Lab and the ING Core Threat Intelligence Project.',
+                    'For fun, she co-founded the Dutch Girl Geek Dinner in 2008. Melanie was named 2010 ICT Professional of the Year (Finalist) by WomeninIT, one of the 400 most successful women in the Netherlands by Viva Magazine (Viva400) in 2010 and 2017, one of the fifty most inspiring women in tech (Inspiring Fifty Netherlands) in 2016 and 2017, and the Most Innovative IT Leader by CIO Magazine NL (TIM Award) in 2017.',
+                    'Her company, Radically Open Security was also named the 50th Most Innovative SME by the Dutch Chamber of Commerce (MKB Innovatie Top 100) in 2016.'
                 ]
             }]
         },
@@ -544,6 +561,28 @@ $(window).load(function(){
                 name: 'Mateusz Niezabitowski',
                 bioParagraphs: [
                     'Former Java/Fullstack Developer, who decided that making things is fun, but breaking them even more so.  Currently working as Application Security Engineer at Ocado Technology. Mostly interested in WebApp security, cryptography, secure software development life-cycle, and human factors of security.'
+                ]
+            }]
+        },
+        'securing-docker': {
+            title: 'Securing the Docker Containers at CI/CD pipeline level',
+            descriptionParagraphs: [
+                'Breaking down the large monolith application into microservices that run in Docker containers is all well and good, but there’s another challenge: keeping those containers secure. In this session we present practical methods to secure Docker containers at the continuous integration/continous deployment pipeline level, and also describe methods that apply equally well on standalone containers.',
+                'The talk covers standalone techniques to secure Docker containers and methods to check the security health of a Docker container at the CI/CD pipeline level, every time the microservice is built after a code change.',
+                'First we discuss periodically scanning the base Docker images that are used by the microservices. We note the importance of patching system packages as soon as a major vulnerability was found.',
+                'Then we introduce a common setup: a platform as a service (PaaS) where the microservices are run in Docker containers and a CI/CD tool. The examples use PaaSTA, Yelp’s open source PaaS (see github repo) and Jenkins, but the approach can be used with any container or CI solution.',
+                'When a microservice is built after a change in the code base, the build and deployment platform goes through a series of steps before deciding to push the code to other environments (stage, production). Typically these steps include running the unit and integration suite of tests, and maybe some performance tests. But what if we have an additional step that checks the security of the Docker container?',
+                'Here we introduce checks that test the security health of the container including:',
+                '- having the latest system and code related packages up to date',
+                '- following the principle of the least privilege',
+                '- following Docker best practices',
+                '- no unencrypted secrets in the codebase',
+                'Lastly, we outline the importance of having such tests run every time the microservice is built. We discuss how doing so helps the team that owns the service become more aware of the security of their microservices and empowers them to remediate classes of security problems with minimal fuss.'
+            ],
+            speakers: [{
+                name: 'Alina Radu',
+                bioParagraphs: [
+                    'Alina is a Security Engineer at Yelp London where she contributes to building secure infrastructure. She is currently leading the data security effort that aims to keep Yelp’s customer data safe from any external and internal malicious activity. Outside work Alina loves travelling, playing tennis and enjoys listening to classical music.'
                 ]
             }]
         },
@@ -626,6 +665,28 @@ $(window).load(function(){
                 name: 'César Gallego Rodríguez',
                 bioParagraphs: [
                     'Since Map-reduce paper found me on 2006 I being interested by functional programing and how it can show data in new forms. Started to apply it developing GIS software and advanced analytics. Nowadays I research about data security.'
+                ]
+            }]
+        },
+        'android-malware': {
+            title: 'Android Malware Adventures: Analyzing Samples and Breaking into C&Cs',
+            descriptionParagraphs: [
+                'Android malware is evolving every day and they are everywhere, even in Google Play Store. Malware developers have found ways to bypass Google’s Bouncer as well as antivirus solutions and many alternative techniques to operate like Windows malware do. Using benign looking application working as a dropper is just one of them. This talk is about android malware on Google Play Store and targeting Turkey such as Red Alert, Exobot and Anubis etc. The talk will cover:',
+                'Techniques to Analyze Samples: Unencrypted samples are often used to retrieve personal informations to sell and do not have obfuscation. Encrypted samples however are used for much sophisticated tasks like stealing banking information. They decrypt themselves by getting the key from a twitter account who owned by the malware developer and operate by communicating with the C&C. Also, most banking samples are using techniques like screen injection and dependency injection which is mostly used by android application developers.',
+                'Bypassing Anti-* Techniques: To be able to dynamically analyze the sample, defeating anti-* techniques are often needed. We will introduce some (known) Frida scripts to be able to defeat common anti-* checks malware uses.',
+                'Extracting IoCs: Extracting twitter account as well as C&C from encrypted samples are often critical to perform threat intelligence over samples. Extracting IoCs while assets are still active was crucial for our research since we are also aiming to takeover C&Cs. We will introduce (known) automatization technique to extract twitter account, decryption key and C&C address.',
+                'Extract Stolen Information from C&Cs: In order to extract information from C&C, one should act swiftly. The speed of extraction process is critical since the actors change C&Cs often. We will give a detailed walkthrough about how we approach C&Cs as a target and extract the informations.',
+                'The samples and informations in the talk is the product of our researches over many bankbot — such as Anubis, Red Alert and Exobot — samples as well as other Turkish malware developer actors’ samples. All IoCs in this talk was shared with the relevant third parties and is now inactive.'
+            ],
+            speakers: [{
+                name: 'Kürşat Oğuzhan Akıncı',
+                bioParagraphs: [
+                    'Kürşat Oğuzhan Akıncı is a Penetration Tester at STM Defence and a Lecturer at TOBB University of Economics and Technology. He is also a team leader of Blackbox Cyber Security which is Turkey’s first cyber security volunteer group, coordinator and mentor of Turkcell CyberCamp and Turkish Airlines CyberTakeOff. In his free time Kürşat is performing security researches in the form of bug bounty in which he has found several vulnerabilities in critical institutions such as NSA as well as helping Mert Can to break into C&Cs.'
+                ]
+            }, {
+                name: 'Mert Can Coşkuner',
+                bioParagraphs: [
+                    'Mert Can Coşkuner is a Mobile Malware Analyst at STM Defence. He is drafting mobile malware analysis reports for STM Defence. He is also maintaining a Penetration Testing and Malware Analysis blog at medium.com/@mcoskuner. In his free time Mert Can is performing mobile malware research and threat intelligence.'
                 ]
             }]
         }
