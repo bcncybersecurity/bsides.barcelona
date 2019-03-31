@@ -661,11 +661,6 @@ $(window).load(function(){
                 bioParagraphs: [
                     'Breaking WiFis since 2006 :) Pragmatic and inventive problem-solver (and sometimes source). A wannabe polymath with a preference for computer languages.'
                 ]
-            }, {
-                name: 'César Gallego Rodríguez',
-                bioParagraphs: [
-                    'Since Map-reduce paper found me on 2006 I being interested by functional programing and how it can show data in new forms. Started to apply it developing GIS software and advanced analytics. Nowadays I research about data security.'
-                ]
             }]
         },
         'android-malware': {
