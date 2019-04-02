@@ -81,10 +81,6 @@
     margin-top: 52.5px;
 }
 
-.client-row:nth-child(4) {
-    margin-bottom: 16px;
-}
-
 .client-row:last-child {
     margin-top: 32px;
 }
@@ -102,6 +98,14 @@
 .client-row .center-vertical .cimpress,
 .client-row .center-vertical .blueliv {
     margin-top: 48px;
+}
+
+.client-row img {
+    margin-bottom: 32px;
+}
+
+.client-row:nth-child(4) img {
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
