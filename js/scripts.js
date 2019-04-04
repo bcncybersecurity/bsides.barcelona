@@ -651,10 +651,10 @@ $(window).load(function(){
             }]
         },
         'best-trojan': {
-            title: 'The best trojan ever made! by mistake...',
+            title: 'Introduction to Parasitic Computing with BrainSlug',
             descriptionParagraphs: [
-                'BrainSlug is the first of its kind; a parasite computation framework that can take over remote systems using their own means.',
-                'Traditional administration software use a resident program known as “agent” to perform their job. But we are trying to reduce the “agent” to a minimum, using already-available environment tools such as Bash, PowerShell or Javascript.'
+                'BrainSlug is the first of its kind; a parasite computation framework that can control remote systems without code deployment.',
+                'Traditional administration software use a resident program known as "agent" to perform their job. But we are trying to reduce the "agent" to a minimum, using already-available environment tools such as Bash, PowerShell or Javascript.'
             ],
             speakers: [{
                 name: 'Roberto Abdelkader Martínez Pérez',
