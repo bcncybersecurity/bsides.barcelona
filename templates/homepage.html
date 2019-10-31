@@ -1,0 +1,22 @@
+{% extends "hero-layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<!-- Intro Section -->
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-center">
+      <h1 class="hero__title">{{ this.title }}</h1>
+      <img src="{{ '/static/img/bsidesbcn_logo.png'|asseturl }}" alt="">
+      <p>{{ this.body }}</p>
+    </div>
+  </div>
+  <!-- slider -->
+  <div id="hero-slider" class="owl-carousel">
+    <div class="item  hero-item" data-bg="{{ '/static/img/barcelona-1.jpg'|asseturl }}"></div>
+    <div class="item  hero-item" data-bg="{{ '/static/img/barcelona-2.jpg'|asseturl }}"></div>
+  </div>
+</div>
+<!-- Intro Section -->
+
+
+{% endblock %}

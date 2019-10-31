@@ -1,0 +1,97 @@
+_template: page.html
+---
+title: Agenda
+---
+body:
+
+<table class="table">
+  <thead>
+      <tr>
+          <th>Time</th>
+          <th>Event</th>
+          <th>Speakers</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>08:00</td>
+          <td>Registration</td>
+          <td>---</td>
+      </tr>
+      <tr>
+          <td>09:25</td>
+          <td>Welcome</td>
+          <td>BSides Organisers</td>
+      </tr>
+      <tr>
+          <td>09:40</td>
+          <td>Keynote</td>
+          <td><a href="https://twitter.com/iiamit" target="_blank">Iftach Ian Amit</a> - <a href="https://cimpress.com/" target="_blank">Cimpress</a></td>
+      </tr>
+      <tr>
+          <td>10:30</td>
+          <td>Half-Life: Lambda Security</td>
+          <td>Artem Tsvetkov</td>
+      </tr>
+      <tr>
+          <td>11:00</td>
+          <td>Scaling threat models... by playing cards!? A case study</td>
+          <td><a href="https://twitter.com/moriraaca" target="_blank">Mateusz Niezabitowski</a></td>
+      </tr>
+      <tr>
+          <td>11:45</td>
+          <td><strong>Coffee Break</strong></td>
+          <td>---</td>
+      </tr>
+      <tr>
+          <td>12:10</td>
+          <td>Android Malware Adventures: Analyzing Samples and Breaking into C&amp;Cs</td>
+          <td>Kürşat Oğuzhan Akıncı &amp;<br> Mert Can Coşkuner</td>
+      </tr>
+      <tr>
+          <td>12:40</td>
+          <td>Pentesting ChatOps</td>
+          <td>Dr. Melanie Rieback</td>
+      </tr>
+      <tr>
+          <td>13:30</td>
+          <td><strong>Lunch</strong></td>
+          <td>---</td>
+      </tr>
+      <tr>
+          <td>15:35</td>
+          <td>Cloud Security: Monitoring and Alerting</td>
+          <td><a href="https://twitter.com/Rorutza" target="_blank">Diana Kramer</a> - <a href="https://king.com" target="_blank">King</a></td>
+      </tr>
+      <tr>
+          <td>16:05</td>
+          <td>Selling Formbook</td>
+          <td>Borja Rodriguez &amp;<br> Victor Acin</td>
+      </tr>
+      <tr>
+          <td>16:55</td>
+          <td>Securing the Docker Containers at CI/CD pipeline level</td>
+          <td><a href="https://twitter.com/transcedentalia" target="_blank">Alina Radu</a> - <a href="https://yelp.com" target="_blank">Yelp</a></td>
+      </tr>
+      <tr>
+          <td>17:20</td>
+          <td><strong>Coffee Break</strong></td>
+          <td>---</td>
+      </tr>
+      <tr>
+          <td>17:45</td>
+          <td>Offensive wfuzz for web bug hunters</td>
+          <td><a href="https://twitter.com/x4vi_mendez" target="_blank">Xavi Mendez</a> - <a href="https://wfuzz.org" target="_blank">wfuzz.org</a></td>
+      </tr>
+      <tr>
+          <td>18:15</td>
+          <td>Introduction to Parasitic Computing with BrainSlug</td>
+          <td><a href="https://twitter.com/nilp0inter" target="_blank">Roberto Abdelkader Martínez Pérez</a></td>
+      </tr>
+      <tr>
+          <td>19:00</td>
+          <td>Closing Remarks and Giveaways</td>
+          <td>---</td>
+      </tr>
+  </tbody>
+</table>

@@ -1,0 +1,8 @@
+[project]
+name = bsides.barcelona
+url = https://bsides.barcelona/
+url_style = relative
+locale = en
+
+[servers.ghpages]
+target = ghpages+https://bcncybersecurity/bsides.barcelona?cname=bsides.barcelona

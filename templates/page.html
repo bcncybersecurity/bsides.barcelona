@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<!-- Page header -->
+<div class="page-top-section">
+  <div class="overlay"></div>
+  <div class="container text-right">
+    <div class="page-info">
+      <h2>{{ this.title }}</h2>
+      <div class="page-links">
+        <a href="/">Home</a>
+        <span>{{ this.title }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Page header end-->
+<!-- page section -->
+<div class="page-section spad">
+  <div class="container">
+    <div class="row">
+      {{ this.body|safe }}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
