@@ -31,15 +31,6 @@
       <div class="section-title">
         <h2 id="count"></h2>
       </div>
-      <div class="row">
-        {% set items = site.query('/events').include_undiscoverable(true) %}
-        {% for item in items %}
-          <div class="col-md-6">
-            {{ item.body }}
-          </div>
-          {% endfor %}
-
-      </div>
     </div>
   </div>
 </div>
