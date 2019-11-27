@@ -5,7 +5,7 @@
   <div class="card-section">
     <div class="container">
       <div class="row">
-        {% set items = site.query('/intro').include_undiscoverable(true) %}
+        {% set items = site.query('/intro').include_undiscoverable(true).order_by('title') %}
         {% for item in items %}
         <!-- single card -->
           <div class="col-md-4 col-sm-6">
@@ -25,14 +25,7 @@
   <!-- card section end-->
 
 
-  <!-- About contant -->
-  <div class="about-contant">
-    <div class="container">
-      <div class="section-title">
-        <h2 id="count"></h2>
-      </div>
-    </div>
-  </div>
+
 </div>
 <!-- About section end -->
 

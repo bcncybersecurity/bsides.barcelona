@@ -5,9 +5,23 @@
 <div class="hero-section">
   <div class="hero-content">
     <div class="hero-center">
-      <h1 class="hero__title">{{ this.title }}</h1>
-      <img src="{{ '/static/img/bsidesbcn_logo.png'|asseturl }}" alt="">
-      <p>{{ this.body }}</p>
+      <div class="row">
+        <div class="col-12">
+          <img src="{{ '/static/img/bsidesbcn_logo.png'|asseturl }}" alt="">
+          <div class="row bg-white text-dark">
+            {{ this.body }}
+
+            <!-- Counter -->
+            <div class="about-contant">
+              <div class="container">
+                <div class="section-title">
+                  <h2 id="count"></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- slider -->
