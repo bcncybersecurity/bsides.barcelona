@@ -9,7 +9,7 @@
       {% set items = site.query('/team').include_undiscoverable(true) %}
       {% for item in items %}
       <!-- single member -->
-        <div class="col-sm-4">
+        <div class="col-sm-3">
           <div class="member">
             <img src="{{ item.image|asseturl }}" alt="">
             <h2>{{ item.title }}</h2>
