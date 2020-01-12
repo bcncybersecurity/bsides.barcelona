@@ -16,14 +16,13 @@
 	<div class="responsive"><i class="fa fa-bars"></i></div>
 	<nav>
 		<ul class="menu-list">
-      <li{% if this._path == '/' %} class="active"{% endif
-        %}><a href="{{ '/'|url }}">Welcome</a></li>
+      <li><a href="{{ '/'|url }}">Welcome</a></li>
 			{% set s = site.query('/') %}
       {% for item in s %}
         	<li><a href="{{ item.path|url }}">{{ item.title }}</a></li>
       {% endfor %}
 			<li><a href="https://www.papercall.io/bsidesbcn20">CFP</a></li>
-			<li><a href="https://www.eventbrite.es/e/bsides-barcelona-2020-tickets-84031242709">Tickets</a></li>
+			<li><a href="https://www.eventbrite.es/e/bsides-barcelona-2020-tickets-84031242709" class="site-btn btn-1">Tickets</a></li>
 			<li><a href="https://twitter.com/barcelonabsides"><i class="fa fa-twitter"></i></a></li>
 			<li><a href="https://www.linkedin.com/company/bsides-barcelona/"><i class="fa fa-linkedin"></i></a></li>
 		</ul>
