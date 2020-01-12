@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="./static/css/flaticon.css?h=a3e10f22"/>
 	<link rel="stylesheet" href="./static/css/magnific-popup.css?h=0f3a431b"/>
 	<link rel="stylesheet" href="./static/css/bootstrap.min.css?h=6e103548"/>
-	<link rel="stylesheet" href="./static/css/owl.carousel.css?h=01e09a9f"/>
-	<link rel="stylesheet" href="./static/css/style.css?h=52b9d638"/>
+	<link rel="stylesheet" href="./static/css/owl.carousel.css?h=891d6dd6"/>
+	<link rel="stylesheet" href="./static/css/style.css?h=2251e526"/>
 
 
 	<!--[if lt IE 9]>
@@ -46,7 +46,7 @@
 	<div class="responsive"><i class="fa fa-bars"></i></div>
 	<nav>
 		<ul class="menu-list">
-      <li class="active"><a href="./">Welcome</a></li>
+      <li><a href="./">Welcome</a></li>
 			
       
         	<li><a href="./past_editions/">Past Editions</a></li>
@@ -54,7 +54,7 @@
         	<li><a href="./code-of-conduct/">Code of Conduct</a></li>
       
 			<li><a href="https://www.papercall.io/bsidesbcn20">CFP</a></li>
-			<li><a href="https://www.eventbrite.es/e/bsides-barcelona-2020-tickets-84031242709">Tickets</a></li>
+			<li><a href="https://www.eventbrite.es/e/bsides-barcelona-2020-tickets-84031242709" class="site-btn btn-1">Tickets</a></li>
 			<li><a href="https://twitter.com/barcelonabsides"><i class="fa fa-twitter"></i></a></li>
 			<li><a href="https://www.linkedin.com/company/bsides-barcelona/"><i class="fa fa-linkedin"></i></a></li>
 		</ul>
@@ -77,6 +77,8 @@
             <div class="container">
               <div class="section-title">
                 <h2 id="count"></h2>
+                <br />
+                <a href="https://www.eventbrite.es/e/bsides-barcelona-2020-tickets-84031242709" class="site-btn btn-1">Tickets</a>
               </div>
             </div>
           </div>
@@ -94,6 +96,36 @@
 </div>
 <!-- Intro Section -->
 
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("May 8, 2020 09:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("count").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("count").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
 
 
   <!-- About section -->
@@ -153,38 +185,23 @@
 <!-- About section end -->
 
 <!-- Display the countdown timer in an element -->
-
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 8, 2020 09:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("count").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("count").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+  <!-- Promotion section -->
+<div class="promotion-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h2>Thrilled about it?</h2>
+        <p>Support the event and the community at large by buying a ticket</p>
+      </div>
+      <div class="col-md-3">
+        <div class="promo-btn-area">
+          <a href="https://www.eventbrite.es/e/bsides-barcelona-2020-tickets-84031242709" class="site-btn btn-2">Get the Tickets!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Promotion section end-->
   <!-- Services section -->
 <div class="services-section spad">
   <div class="container">
