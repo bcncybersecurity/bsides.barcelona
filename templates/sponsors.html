@@ -2,16 +2,14 @@
 <div class="services-section spad">
   <div class="container">
     <div class="section-title dark left">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <h2>Meet our <span>Sponsors</span></h2>
     </div>
+    <div class="section-title dark left">
+      <h3> <span>Leading</span> supporters</h3>
+      <br />
+    </div>
     <div class="row">
-      {% set items = site.query('/sponsors').include_undiscoverable(true) %}
+      {% set items = site.query('/sponsors').filter(F.role == 'leading').include_undiscoverable(true) %}
       {% for item in items %}
       <!-- single service -->
         <div class="col-md-4 col-sm-6">
