@@ -14,6 +14,9 @@
             <img src="{{ item.image|asseturl }}" alt="">
             <h2>{{ item.title }}</h2>
             <h3>{{ item.role }}</h3>
+            <h4>
+              <a href="https://twitter.com/{{ item.twitter }}"><i class="fa fa-twitter"></i></a>
+            </h4>
           </div>
         </div>
       {% endfor %}
