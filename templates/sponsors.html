@@ -8,7 +8,7 @@
       <h3> <span>Leading</span> supporters</h3>
       <br />
     </div>
-    <div class="row">
+    <div class="row align-items-center">
       {% set items = site.query('/sponsors').filter(F.role == 'leading').include_undiscoverable(true) %}
       {% for item in items %}
       <!-- single service -->
