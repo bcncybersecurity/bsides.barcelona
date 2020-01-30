@@ -1,0 +1,32 @@
+<!-- Services section -->
+<div class="services-section spad">
+  <div class="container">
+    <div class="section-title dark left">
+      <h2>BSides <span>Gives Back</span></h2>
+    </div>
+    <div class="section-title dark left">
+      <h3>Every year we donate a % of what we received from leading sponsors. This year we support the following organizations</h3>
+      <br />
+    </div>
+    <div class="row align-items-center">
+      {% set items = site.query('/donations').include_undiscoverable(true) %}
+      {% for item in items %}
+      <!-- single service -->
+        <div class="col-md-4 col-sm-6 text-center">
+          <div class="p-2">
+            <div class="service pl-3 pr-3 justify-content-center">
+              <div class="icon">
+                <a href="{{ item.web }}"><img src="{{ item.image|asseturl }}" alt="{{ item.title }}"/></a>
+              </div>
+            </div>
+            <div class="row pl-5 pr-5 text-justify">
+              <div class="text">{{ item.body }}</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+<!-- services section end -->
