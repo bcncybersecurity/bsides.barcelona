@@ -70,18 +70,8 @@
       <div class="row">
         <div class="col-12">
           <img src="./static/img/bsidesbcn_logo.png?h=5e11b685" alt="">
-          <h1>May 8th 2020</h1>
+          <h1>Postponed due to COVID-19, stay tuned for the new date!</h1>
 
-          <!-- Counter -->
-          <div class="about-contant">
-            <div class="container">
-              <div class="section-title">
-                <h2 id="count"></h2>
-                <br />
-                <a href="https://www.eventbrite.es/e/bsides-barcelona-2020-tickets-84031242709" class="site-btn btn-2">Tickets</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -101,30 +91,30 @@
   var countDownDate = new Date("May 8, 2020 09:00:00").getTime();
 
   // Update the count down every 1 second
-  var x = setInterval(function() {
+  // var x = setInterval(function() {
 
-    // Get today's date and time
-    var now = new Date().getTime();
+  //   // Get today's date and time
+  //   var now = new Date().getTime();
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+  //   // Find the distance between now and the count down date
+  //   var distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  //   // Time calculations for days, hours, minutes and seconds
+  //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  //   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  //   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  //   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the result in the element with id="demo"
-    document.getElementById("count").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+  //   // Display the result in the element with id="demo"
+  //   document.getElementById("count").innerHTML = days + "d " + hours + "h "
+  //   + minutes + "m " + seconds + "s ";
 
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("count").innerHTML = "EXPIRED";
-    }
-  }, 1000);
+  //   // If the count down is finished, write some text
+  //   if (distance < 0) {
+  //     clearInterval(x);
+  //     document.getElementById("count").innerHTML = "EXPIRED";
+  //   }
+  // }, 1000);
 </script>
 
 
@@ -264,6 +254,15 @@
           <div class="service">
             <div class="icon">
               <a href="https://cimpress.com/"><img src="./static/img/sponsors/cimpress_logo.png?h=06c70181" alt="Cimpress"/></a>
+            </div>
+          </div>
+        </div>
+      
+      <!-- single service -->
+        <div class="col-md-4 col-sm-6">
+          <div class="service">
+            <div class="icon">
+              <a href="https://auth0.com"><img src="./static/img/sponsors/auth0_logo.png?h=a13fe123" alt="Auth0"/></a>
             </div>
           </div>
         </div>
