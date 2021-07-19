@@ -1,43 +1,50 @@
-<!-- Services section -->
-<div class="services-section spad">
+<!-- Sponsors section -->
+<div class="sponsors-section services-section">
   <div class="container">
-    <div class="section-title dark left">
+    <div class="section-title dark">
       <h2>Meet our <span>Sponsors</span></h2>
     </div>
-    <div class="section-title dark left">
-      <h3> <span>Leading</span> supporters</h3>
-      <br />
-    </div>
-    <div class="row align-items-center">
-      {% set items = site.query('/sponsors').filter(F.role == 'leading').include_undiscoverable(true) %}
-      {% for item in items %}
-      <!-- single service -->
-        <div class="col-md-4 col-sm-6">
-          <div class="service">
-            <div class="icon">
-              <a href="{{ item.web }}"><img src="{{ item.image|asseturl }}" alt="{{ item.title }}"/></a>
+    <div class="element">
+        <h4>Leading Supporters</h4>
+        <div class="row align-items-center">
+          {% set items = site.query('/sponsors').filter(F.role == 'leading').include_undiscoverable(true) %}
+          {% for item in items %}
+            <div class="col-md-6 col-sm-6">
+              <div class="sponsor">
+                  <a href="{{ item.web }}"><img src="{{ item.image|asseturl }}" alt="{{ item.title }}"/></a>
+              </div>
             </div>
-          </div>
+          {% endfor %}
         </div>
-      {% endfor %}
     </div>
-    <div class="section-title dark left">
-      <h3> <span>Contributing</span> supporters</h3>
-      <br />
-    </div>
-    <div class="row align-items-center">
-      {% set items = site.query('/sponsors').filter(F.role == 'contributing').include_undiscoverable(true) %}
-      {% for item in items %}
-      <!-- single service -->
-        <div class="col-md-4 col-sm-6">
-          <div class="service">
-            <div class="icon">
-              <a href="{{ item.web }}"><img src="{{ item.image|asseturl }}" alt="{{ item.title }}"/></a>
+    <div class="element">
+        <h4>Contributing Supporters</h4>
+        <div class="row align-items-center">
+          {% set items = site.query('/sponsors').filter(F.role == 'contributing').include_undiscoverable(false) %}
+          {% for item in items %}
+          <!-- single service -->
+            <div class="col-md-6 col-sm-6">
+              <div class="sponsor">
+                  <a href="{{ item.web }}"><img class="supporter" src="{{ item.image|asseturl }}" alt="{{ item.title }}"/></a>
+              </div>
             </div>
-          </div>
+          {% endfor %}
         </div>
-      {% endfor %}
+    </div>
+    <div class="element">
+        <h4>Community Supporters</h4>
+        <div class="row align-items-center">
+          {% set items = site.query('/sponsors').filter(F.role == 'community').include_undiscoverable(false) %}
+          {% for item in items %}
+          <!-- single service -->
+            <div class="col-md-4 col-sm-4">
+              <div class="sponsor">
+                  <a href="{{ item.web }}"><img class="community" src="{{ item.image|asseturl }}" alt="{{ item.title }}"/></a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
     </div>
   </div>
 </div>
-<!-- services section end -->
+<!-- sponsors section end -->
