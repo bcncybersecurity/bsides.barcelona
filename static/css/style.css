@@ -1766,3 +1766,24 @@ footer {
 .border-1 {
 	border: 1px solid #ccc;
 }
+
+/* CUSTOM */
+
+.sponsors-section {
+    padding-top: 32px;
+}
+
+.sponsors-section .section-title,
+.sponsors-section .element {
+    margin-bottom: 45px;
+}
+
+
+.sponsor {
+    text-align: center;
+}
+
+.donations-section .subtitle {
+    font-size: 1.8rem;
+    margin-top: 18px;
+}
