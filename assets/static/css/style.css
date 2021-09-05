@@ -407,6 +407,7 @@ ul {
 	About section
 --------------------------*/
 .about-section,
+.agenda-section,
 .team-section {
 	background: #58457e;
 	position: relative;
@@ -1769,7 +1770,8 @@ footer {
 
 /* CUSTOM */
 
-.sponsors-section {
+.sponsors-section,
+.donations-section {
     padding-top: 32px;
 }
 
@@ -1786,4 +1788,31 @@ footer {
 .donations-section .subtitle {
     font-size: 1.8rem;
     margin-top: 18px;
+}
+
+/*------------------------
+	Agenda section
+--------------------------*/
+
+.agenda-section h3 {
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.agenda-section h3 span {
+    background: #9dcdb5;
+}
+
+.agenda-section table {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+td.break {
+    font-weight: bold;
+    text-align: center;
+}
+
+.agenda-section .speakers {
+    font-weight: bold;
 }
