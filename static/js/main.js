@@ -149,6 +149,15 @@ function videoPopup() {
 	});
 }
 
+/*------------------
+	Agenda Popups
+--------------------*/
+function agendasPopup() {
+    $('.open-agenda-popup').magnificPopup({
+        type: 'inline',
+        midClick: true
+    });
+}
 
 
 /*------------------
@@ -262,7 +271,7 @@ function progressCircle() {
 	heroSection();
 	testimonial();
 	progressbar();
-	videoPopup();
+    agendasPopup();
 	accordions();
 	progressCircle();
 
