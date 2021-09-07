@@ -1798,6 +1798,16 @@ footer {
     z-index: 0;
 }
 
+.agenda-section .subtitle {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: 18px;
+}
+
+.agenda-section .second-day {
+    margin-top: 45px;
+}
+
 .agenda-section h3 {
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -1805,6 +1815,35 @@ footer {
 
 .agenda-section h3 span {
     background: #9dcdb5;
+}
+
+.agenda-section .schedule-row {
+    color: #fff;
+}
+
+.agenda-section .schedule-row .presentation {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.agenda-section .schedule-row h4 {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.agenda-section .schedule-row span {
+    color: #212529;
+    background: #9dcdb5;
+    margin-right: 0.5rem;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.agenda-section .schedule-row hr {
+    border-color: #fff;
+    width: 100%;
 }
 
 .agenda-section table {
