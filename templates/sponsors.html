@@ -45,6 +45,20 @@
           {% endfor %}
         </div>
     </div>
+    <div class="element">
+        <h4>Digital Swag Supporters</h4>
+        <div class="row align-items-center">
+          {% set items = site.query('/sponsors').filter(F.role == 'swag').include_undiscoverable(false) %}
+          {% for item in items %}
+          <!-- single service -->
+            <div class="col-md-4 col-sm-4">
+              <div class="sponsor">
+                  <a href="{{ item.web }}"><img class="swag" src="{{ item.image|asseturl }}" alt="{{ item.title }}"/></a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
   </div>
 </div>
 <!-- sponsors section end -->
