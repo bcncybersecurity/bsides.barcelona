@@ -47,17 +47,20 @@
     </div>
     <div class="element">
         <h4>Digital Swag Supporters</h4>
+        {% set items = site.query('/sponsors').filter(F.role == 'swag').include_undiscoverable(false) %}
+        {% for row in items | batch(3, '&nbsp;') %}
         <div class="row align-items-center">
-          {% set items = site.query('/sponsors').filter(F.role == 'swag').include_undiscoverable(false) %}
-          {% for item in items %}
-          <!-- single service -->
-            <div class="col-md-4 col-sm-4">
-              <div class="sponsor">
-                  <a href="{{ item.web }}"><img class="swag" src="{{ item.image|asseturl }}" alt="{{ item.title }}"/></a>
-              </div>
-            </div>
-          {% endfor %}
+            {% for column in row %}
+                {% if column != '&nbsp;' %}
+                <div class="col-md-4 col-sm-4">
+                    <div class="sponsor">
+                        <a href="{{ column.web }}"><img class="swag" src="{{ column.image|asseturl }}" alt="{{ column.title }}"/></a>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
         </div>
+        {% endfor %}
     </div>
   </div>
 </div>
