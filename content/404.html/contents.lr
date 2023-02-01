@@ -1,0 +1,16 @@
+_model: 404
+---
+_discoverable: false
+---
+full_title: 404 — Page Not Found
+---
+short_title: 404
+---
+bg_image:
+---
+bg_image_fadeout: 0.3
+---
+message:
+
+Feel like it's wrong? Let us know on <a href="https://www.linkedin.com/company/bsides-barcelona/" target=_blank>LikedIn</a>, <a href="https://twitter.com/barcelonabsides" target=_blank>Twitter</a> or <a href="mailto:info@bsides.barcelona">email</a>.
+---

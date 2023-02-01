@@ -1,8 +1,258 @@
-title: 
+_model: single-layout
 ---
-body:
-
-# Virtual edition, September 30th and October 1st 2021
-
+show_home_nav: true
 ---
-_template: homepage.html
+hero_title:
+---
+hero_description:
+
+Welcome to the BSides Barcelona website!
+---
+hero_image: barcelona-1.jpg
+---
+starting_block_bg: light
+---
+
+
+
+main_content:
+
+
+#### content ####
+section_id: overview
+----
+title: What is BSides? 
+----
+description:
+----
+nav_label: About
+----
+content:
+
+Security BSides is a community-driven framework for building events for and by information security community members. The goal is to expand the spectrum of conversation beyond the traditional confines of space and time. It creates opportunities for individuals to both present and participate in an intimate atmosphere that encourages collaboration. It is an intense event with discussions, demos, and interaction from participants. It's where you can build lasting connections. The goal is to create opportunities for individuals to participate in an atmosphere that encourages collaboration and spontaneous conversations.<br />
+If you want to know more about this movement, please check the <a href="http://www.securitybsides.com/w/page/12194156/FrontPage" target=_blank>original web site</a> (yes, it's HTTP, we know.)
+----
+
+
+
+#### services ####
+section_id: features
+----
+title: Features
+----
+description:
+----
+nav_label: Features
+----
+video_url: https://www.youtube.com/watch?v=PB5fXLcmIKA&list=PLWLQu0-o9OwSXnnalI7w9pqJZrhdF_IVY
+----
+link_whole_card: true
+----
+services:
+
+##### service #####
+title: Duration
+-----
+description:
+
+The event will span two days, from 9.30am to 5pm. There will be lunch break from 1pm to 2pm, coffee, water and juices will be available all day.
+-----
+icon:
+-----
+url:
+-----
+
+
+##### service #####
+title: Content
+-----
+description:
+
+Two tracks, two days, plenty of activities: talks, roundtables, workshops, interactive games and more.
+-----
+icon:
+-----
+url:
+-----
+
+
+##### service #####
+title: Location
+-----
+description:
+
+We haven't a confirmed location yet. Please come back for an update or connect via our social media pages, where we will share updates about the conference. Follow the hashtag #bsidesbcn23 on <a href="https://www.linkedin.com/feed/hashtag/?keywords=bsidesbcn23" target=_blank>Linkedin</a> and <a href="https://twitter.com/search?q=%23bsidesbcn23" target=_blank>Twitter</a> to not miss it!
+-----
+icon:
+-----
+url: readme
+-----
+----
+
+#### content ####
+section_id: cfp
+----
+title: Call for Papers
+----
+description:
+----
+nav_label: CFP
+----
+content:
+
+Are you looking for a chance to showcase your research, innovations, and insights on information security? Are you looking for a chance to share your knowledge and experience in the information security industry?<br />
+If so, then you should consider submitting to BSidesBCN23!<br />
+This conference will be a great opportunity to share your knowledge and gain valuable feedback from industry experts and other information security professionals. Presenters will have the chance to share their work with a wide audience, get their work published, expand their network and learn new things. It’s a great opportunity to get recognition and meet like-minded people in the information security community.<br />
+The conference is open to all levels of experience and expertise. Take advantage of this great opportunity and <a href="https://www.papercall.io/bsidesbcn23" target=_blank>submit your research to BSides Barcelona!</a>.
+----
+
+#### gallery ####
+section_id: gallery
+----
+title: Our Sponsors
+----
+description: BSides is a community driven, sponsor funded conference. Without a network of partners, this event wouldn't be possible.<br />Interested in becoming one? Read our <a href="https://drive.google.com/file/d/1UDBC-gNIPqaRr8drVQoFQJZBKt93jue-/view?usp=share_link" target=_blank>Sponsorship kit</a>.<br />Interested to be a community sponsor? join us as <a href="https://drive.google.com/file/d/1rsFis0qtGlvBVAzMCsTqM4gphI_tENOS/view?usp=share_link" target=_blank>Friends of BSidesBCN</a>.
+----
+nav_label: sponsors
+----
+show_titles: true
+----
+gallery_items:
+
+----
+
+#### content ####
+section_id: agenda
+----
+title: Agenda
+----
+description:
+----
+nav_label: Agenda
+----
+content:
+
+Conference's program is not out yet. It will be posted here once the <a href="https://www.papercall.io/bsidesbcn23" target=_blank>Call for Papers</a> ends.
+----
+
+
+#### content ####
+section_id: donations
+----
+title: Givebacks
+----
+description:
+----
+nav_label: Givebacks
+----
+content:
+
+BSides Barcelona has a tradition of giving back to the global security and privacy community: €1000 of what we received from Leading sponsors is donated to organizations in cyber security who work everyday to keep the web open and the net neutral.
+
+We are in conversation with several Spanish, European and international organizations whom need support from our leading sponsors and will update this section with their names and logos.
+----
+
+
+#### multisection ####
+section_id: credits
+----
+title: Organizers
+----
+description:
+
+The key people and organizations without which this theme wouldn't be possible.
+----
+nav_label: Team
+----
+inner_content:
+
+##### team #####
+section_id: contributors
+-----
+title:
+-----
+description:
+-----
+nav_label:
+-----
+link_whole_card: false
+-----
+members:
+
+###### member ######
+name: Davide Barbato
+------
+position: Founder & Organizer
+------
+description:
+
+Founder of the BSides Barcelona chapter and founder of Dab Solutions.
+------
+image: davide.jpg
+------
+website: https://dab.solutions
+------
+facebook:
+------
+twitter: https://twitter.com/davbarbato
+------
+instagram:
+------
+github:
+------
+linkedin: https://www.linkedin.com/in/davbarbato/
+------
+
+
+###### member ######
+name: Dasha Diaz
+------
+position: Organizer
+------
+description:
+
+Founder of itrainsec and BSides Barcelona board member.
+------
+image: Dasha.jpg
+------
+url:
+------
+website: https://www.itrainsec.com/
+------
+facebook:
+------
+twitter: https://twitter.com/dariaski
+------
+instagram:
+------
+github:
+------
+linkedin: https://www.linkedin.com/in/dasha-diaz/
+------
+
+
+###### member ######
+name: Martin Vigo
+------
+position: Organizer
+------
+description:
+
+Founder of Tierra de Hackers podcast and BSides Barcelona board member.
+------
+image: martinvigo.jpg
+------
+url:
+------
+website: https://www.martinvigo.com/
+------
+facebook:
+------
+twitter: https://twitter.com/martin_vigo
+------
+instagram:
+------
+github:
+------
+linkedin: https://www.linkedin.com/in/martinvigo/
+------
