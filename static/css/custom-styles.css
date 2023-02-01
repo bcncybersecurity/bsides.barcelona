@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Site custom styles */
+
+
+.hero-section .fh5co-copy-inner h1 {
+  color: black;
+  text-align: center;
+  font-size: 6em;
+}
+
+.hero-section .fh5co-copy-inner h2 {
+  color: black;
+  text-align: center;
+  font-size: 2em;
+}
