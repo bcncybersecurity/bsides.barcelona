@@ -14,3 +14,8 @@
   text-align: center;
   font-size: 2em;
 }
+
+.gallery-section .fh5co-item {
+  border-style: none;
+  background-size: inherit;
+}
