@@ -119,6 +119,18 @@ show_titles: true
 ----
 gallery_items:
 
+##### gallery_item #####
+title: Black Hills Information Security
+-----
+subtitle: Friends of
+-----
+image: /static/images/bhis-logo.svg
+-----
+url: https://www.blackhillsinfosec.com/
+-----
+direct_link: true
+-----
+
 ----
 
 #### content ####
